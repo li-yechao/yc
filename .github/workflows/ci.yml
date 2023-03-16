@@ -1,0 +1,26 @@
+name: ci
+
+env:
+  NODE_OPTIONS: '--max_old_space_size=6144'
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+
+      - name: Set yarn cache
+        uses: c-hive/gha-yarn-cache@v2
+
+      - name: Install dependencies
+        run: yarn
+
+      - name: Lint package
+        run: yarn lint
