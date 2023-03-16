@@ -1,0 +1,14 @@
+{
+  "name": "@yc/react",
+  "version": "0.0.0",
+  "description": "React components",
+  "author": "Yechao Li <liyechao@yechao.xyz>",
+  "homepage": "https://github.com/li-yechao/yc#readme",
+  "license": "MIT",
+  "main": "src/index.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/li-yechao/yc.git"
+  },
+  "scripts": {}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "root",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "husky": "^8.0.3",
+    "import-sort-style-module": "^6.0.0",
+    "lerna": "^6.5.1",
+    "lint-staged": "^13.2.0",
+    "prettier": "^2.8.4",
+    "prettier-plugin-import-sort": "^0.0.7",
+    "typescript": "^4.9.5"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,json}": [
+      "prettier --write"
+    ]
+  },
+  "importSort": {
+    ".js, .jsx, .mjs": {
+      "parser": "babylon",
+      "style": "module"
+    },
+    ".ts, .tsx": {
+      "style": "module",
+      "parser": "typescript"
+    }
+  }
+}
