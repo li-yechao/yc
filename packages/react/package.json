@@ -16,10 +16,12 @@
     "lint": "tsc --noEmit"
   },
   "dependencies": {
+    "@emotion/css": "^11.10.6",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "ahooks": "^3.7.5",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "swiper": "^9.1.1"
   },
   "peerDependencies": {
     "@mui/icons-material": "^5.11.11",
